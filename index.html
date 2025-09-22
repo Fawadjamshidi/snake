@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Snake</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+  <meta name="description" content="Classic Snake game in vanilla JavaScript">
+  <meta name="color-scheme" content="light dark">
+</head>
+<body>
+  <div class="app">
+    <header class="header">
+      <h1>Snake</h1>
+      <div class="scoreboard">
+        <div>Score: <span id="score">0</span></div>
+        <div>Best: <span id="bestScore">0</span></div>
+      </div>
+    </header>
+
+    <main class="main">
+      <canvas id="game" width="480" height="480" aria-label="Snake game canvas" role="img"></canvas>
+      <div class="controls">
+        <button id="btnStart" class="btn primary">Start</button>
+        <button id="btnPause" class="btn">Pause</button>
+        <button id="btnRestart" class="btn">Restart</button>
+        <select id="speed" class="select" aria-label="Speed">
+          <option value="120">Easy</option>
+          <option value="90" selected>Normal</option>
+          <option value="60">Hard</option>
+          <option value="45">Extreme</option>
+        </select>
+      </div>
+      <p class="hint">Use arrow keys or WASD. P to pause. R to restart.</p>
+    </main>
+
+    <footer class="footer">
+      <small>Built with vanilla JS</small>
+    </footer>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
+
+
