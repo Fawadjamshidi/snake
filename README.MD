@@ -16,8 +16,3 @@ A simple, modern-looking Snake game built with HTML5 Canvas and plain JavaScript
 - `index.html`: markup and UI controls
 - `styles.css`: minimal styling with light/dark support
 - `main.js`: game logic and rendering
-
-## Notes
-
-- Best score is saved in `localStorage`.
-- The snake wraps around edges instead of ending the game.
